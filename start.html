@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="start-page">
+<header class="page-header">
+    <div class="page-header__top">
+        <div class="logo">
+            <a href="./start.html">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/content/logo-desk.png">
+                    <source srcset="img/content/logo-mobile.png">
+                    <img src="img/content/logo-mobile.png" alt="">
+                </picture>
+            </a>
+        </div>
+        <div class="page-header__wrapper">
+            <div class="login">
+                E-mail sing up
+            </div>
+            <a href="./shopping-bag.html" class="shopping-bag-link">
+                <div class="shopping-bag">
+                    <span class="shopping-bag__cost">Bag </span>
+                    <span class="shopping-bag__quantity">(0)</span>
+                </div>
+            </a>
+            <div class="hamburger" id="header-button">
+                <span class="icon"></span>
+            </div>
+        </div>
+    </div>
+    <div class="page-header__bottom">
+        <ul class="main-nav">
+            <li class="main-nav__item"><a class="main-nav__link active" href="#">Women</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Men</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Handbags</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Accessories</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Sale</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">New Arrivals</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Clearance</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Store Locator</a></li>
+        </ul>
+        <form class="search">
+            <input type="text" class="search__input" placeholder="Style Name">
+            <button type="submit" class="search__submit"></button>
+        </form>
+    </div>
+</header>
+<div class="slider-section">
+    <div class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__item">
+                <a class="slider__link" href="./catalog.html">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/slider-hero/1-desk.jpg">
+                        <source media="(min-width: 768px)" srcset="img/slider-hero/1-tablet.jpg">
+                        <source srcset="img/slider-hero/1.jpg">
+                        <img src="img/slider-hero/1.jpg" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="upper-block">
+                        <div class="upper-block__sub-title">New collection</div>
+                        <div class="upper-block__title">black white</div>
+                        <div class="upper-block__text">
+                            <span class="upper-block__text-firs">Spring</span>
+                            <span class="upper-block__text-line"></span>
+                            <span class="upper-block__text-second">Summer</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="slider__item">
+                <a class="slider__link" href="./item.html">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/slider-hero/2-desk.jpg">
+                        <source media="(min-width: 768px)" srcset="img/slider-hero/2-tablet.jpg">
+                        <source srcset="img/slider-hero/2.jpg">
+                        <img src="img/slider-hero/2.jpg" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="slider__item">
+                <a class="slider__link" href="./catalog.html">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/slider-hero/3-desk.jpg">
+                        <source media="(min-width: 768px)" srcset="img/slider-hero/3-tablet.jpg">
+                        <source srcset="img/slider-hero/3.jpg">
+                        <img src="img/slider-hero/3.jpg" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="slider__item">
+                <a class="slider__link" href="./item.html">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="http://placeimg.com/1280/770/nature">
+                        <source media="(min-width: 768px)" srcset="http://placeimg.com/980/770/nature">
+                        <!--<source srcset="http://via.placeholder.com/640x360">-->
+                        <img src="http://placeimg.com/980/770/nature" alt="">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        <div class="slider__arrow-prev" id="prev" role="button">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129"
+                 fill="#ffffff" preserveAspectRatio="xMaxYMax meet">
+                <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
+            </svg>
+        </div>
+        <div class="slider__arrow-next" id="next" role="button">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129"
+                 fill="#ffffff">
+                <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
+            </svg>
+        </div>
+    </div>
+    <div class="slider__pagination" id="slider-nav"></div>
+</div>
+
+<div class="banner-section">
+    <div class="banner-section__left">
+        <div class="banner-wrapper">
+            <a class="banner-wrapper__link" href="./item.html">
+                <img src="img/content/banner-1.png" alt="">
+            </a>
+            <div class="banner-content">
+                <div class="banner-content__header">Nike Red</div>
+                <span class="label">New</span>
+            </div>
+        </div>
+    </div>
+    <div class="banner-section__right">
+        <div class="banner-wrapper">
+            <a class="banner-wrapper__link" href="./catalog.html">
+                <img src="img/content/banner-2.png" alt="">
+            </a>
+            <div class="banner-content">
+                <div class="banner-content__header brand-color">Sale</div>
+                <span class="label">-70%</span>
+            </div>
+        </div>
+        <div class="banner-wrapper bg-grey">
+            <a class="banner-wrapper__link" href="#">
+                <img src="img/content/banner-3.png" alt="">
+            </a>
+            <div class="banner-content">
+                <div class="banner-content__header">Caps & Hats</div>
+                <span class="label">Sale -50%</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="arrivals-section">
+    <div class="arrivals-section__inner">
+        <h2 class="arrivals-section__header">New arrivals</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card__image">
+                    <img src="img/cards/1.jpg" alt="">
+                </div>
+                <div class="card__title">Straight Leg Jeans</div>
+                <div class="card__price">&#163;55</div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="img/cards/2.jpg" alt="">
+                </div>
+                <div class="card__title">Boyfriend T-Shirt with Bohemian Print</div>
+                <div class="card__price">&#163;34.25</div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="img/cards/3.jpg" alt="">
+                </div>
+                <div class="card__title">Only Busted Knee Jean</div>
+                <div class="card__price">&#163;140.50</div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="img/cards/4.jpg" alt="">
+                </div>
+                <div class="card__title">Only Skinny Jeans</div>
+                <div class="card__price">&#163;140.50</div>
+            </div>
+        </div>
+        <div class="arrivals-section__button">
+            <a href="#" class="button">All arrivals</a>
+        </div>
+    </div>
+</div>
+<footer class="page-footer">
+    <div class="page-footer__top">
+        <div class="page-footer__left">
+            <div class="box">
+                <h3 class="box__header">Quick Links</h3>
+                <div class="box__content">
+                    <ul class="item-list">
+                        <li><a href="#">Store locator
+                        </a></li>
+                        <li><a href="#">Gift cards
+                        </a></li>
+                        <li><a href="#">Size guide
+                        </a></li>
+                        <li><a href="#">About us
+                        </a></li>
+                        <li><a href="#">Support
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <h3 class="box__header">Customer Care</h3>
+                <div class="box__content">
+                    <ul class="item-list">
+                        <li><a href="#">Customer service
+                        </a></li>
+                        <li><a href="#">Track my order
+                        </a></li>
+                        <li><a href="#">Return policy
+                        </a></li>
+                        <li><a href="#">Shipping & delivery
+                        </a></li>
+                        <li><a href="#">Contact us
+                        </a></li>
+                        <li><a href="#">Careers
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer__right">
+            <div class="box">
+                <h3 class="box__header">Questions</h3>
+                <div class="box__content">
+                    <a class="tweet-us" href="#">Tweet us @template</a>
+                </div>
+            </div>
+            <div class="box">
+                <h3 class="box__header">Order by phone</h3>
+                <div class="box__content">
+                    <a href="tel:8-800-409-47-12" class="href">8-800-409-47-12</a>
+                </div>
+            </div>
+            <div class="box tablet-mobile-hidden">
+                <p class="text-box">
+                    We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5
+                    days.
+                </p>
+            </div>
+            <div class="box tablet-mobile-hidden">
+                <ul class="social-list">
+                    <li class="social-list__item"><a class="social-lis__link" href="#" target="_blank"
+                                                     title="Our shot on Facebook">
+                        <span class="sr-only">Our shop on Facebook</span>
+                        <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512"
+                             xml:space="preserve" xmlns="http://www.w3.org/2000/svg" fill="#385C8E" width="14px"
+                             height="11px">
+                            <path d="m134.94 272.69h56.123v231.05c0 4.562 3.696 8.258 8.258 8.258h95.159c4.562 0 8.258-3.696 8.258-8.258v-229.96h64.519c4.195 0 7.725-3.148 8.204-7.315l9.799-85.061c0.269-2.34-0.472-4.684-2.038-6.44-1.567-1.757-3.81-2.763-6.164-2.763h-74.316v-53.321c0-16.073 8.654-24.224 25.726-24.224h48.59c4.562 0 8.258-3.698 8.258-8.258v-78.079c0-4.562-3.696-8.258-8.258-8.258h-66.965c-0.472-0.023-1.521-0.061-3.067-0.061-11.619 0-52.006 2.281-83.909 31.63-35.348 32.524-30.434 71.465-29.26 78.217v62.352h-58.918c-4.562 0-8.258 3.696-8.258 8.258v83.975c1e-3 4.561 3.697 8.259 8.259 8.259z"/>
+                            </svg>
+                    </a></li>
+                    <li class="social-list__item"><a class="social-lis__link" href="#" target="_blank"
+                                                     title="Our shot on Twitter">
+                        <span class="sr-only">Our shop on Twitter</span>
+                        <svg enable-background="new 0 0 612 612" version="1.1" viewBox="0 0 612 612"
+                             xml:space="preserve" xmlns="http://www.w3.org/2000/svg" fill="#4bb8f0" width="14px"
+                             height="11px">
+                                  <path d="m612 116.26c-22.525 9.981-46.694 16.75-72.088 19.772 25.929-15.527 45.777-40.155 55.184-69.411-24.322 14.379-51.169 24.82-79.775 30.48-22.907-24.437-55.49-39.658-91.63-39.658-69.334 0-125.55 56.217-125.55 125.51 0 9.828 1.109 19.427 3.251 28.606-104.33-5.24-196.84-55.223-258.75-131.17-10.823 18.51-16.98 40.078-16.98 63.101 0 43.559 22.181 81.993 55.835 104.48-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0 60.806 43.291 111.55 100.69 123.1-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-0.803-23.634-2.333 15.985 49.907 62.336 86.199 117.25 87.194-42.947 33.654-97.099 53.655-155.92 53.655-10.134 0-20.116-0.612-29.944-1.721 55.567 35.681 121.54 56.485 192.44 56.485 230.95 0 357.19-191.29 357.19-357.19l-0.421-16.253c24.666-17.593 46.005-39.697 62.794-64.861z"/>
+                                 </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="page-footer__holder">
+        <div class="page-footer__center">
+            <nav class="footer__nav">
+                <ul class="list-nav">
+                    <li><a href="">Legal notice</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Site map</a></li>
+                </ul>
+            </nav>
+            <div class="page-footer__social tablet-hidden">
+                <ul class="social-list">
+                    <li class="social-list__item"><a class="social-lis__link" href="#" target="_blank"
+                                                     title="Our shot on Facebook">
+                        <span class="sr-only">Our shop on Facebook</span>
+                        <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512"
+                             xml:space="preserve" xmlns="http://www.w3.org/2000/svg" fill="#385C8E" width="14px"
+                             height="11px">
+                            <path d="m134.94 272.69h56.123v231.05c0 4.562 3.696 8.258 8.258 8.258h95.159c4.562 0 8.258-3.696 8.258-8.258v-229.96h64.519c4.195 0 7.725-3.148 8.204-7.315l9.799-85.061c0.269-2.34-0.472-4.684-2.038-6.44-1.567-1.757-3.81-2.763-6.164-2.763h-74.316v-53.321c0-16.073 8.654-24.224 25.726-24.224h48.59c4.562 0 8.258-3.698 8.258-8.258v-78.079c0-4.562-3.696-8.258-8.258-8.258h-66.965c-0.472-0.023-1.521-0.061-3.067-0.061-11.619 0-52.006 2.281-83.909 31.63-35.348 32.524-30.434 71.465-29.26 78.217v62.352h-58.918c-4.562 0-8.258 3.696-8.258 8.258v83.975c1e-3 4.561 3.697 8.259 8.259 8.259z"/>
+                            </svg>
+                    </a></li>
+                    <li class="social-list__item"><a class="social-lis__link" href="#" target="_blank"
+                                                     title="Our shot on Twitter">
+                        <span class="sr-only">Our shop on Twitter</span>
+                        <svg enable-background="new 0 0 612 612" version="1.1" viewBox="0 0 612 612"
+                             xml:space="preserve" xmlns="http://www.w3.org/2000/svg" fill="#4bb8f0" width="14px"
+                             height="11px">
+                                  <path d="m612 116.26c-22.525 9.981-46.694 16.75-72.088 19.772 25.929-15.527 45.777-40.155 55.184-69.411-24.322 14.379-51.169 24.82-79.775 30.48-22.907-24.437-55.49-39.658-91.63-39.658-69.334 0-125.55 56.217-125.55 125.51 0 9.828 1.109 19.427 3.251 28.606-104.33-5.24-196.84-55.223-258.75-131.17-10.823 18.51-16.98 40.078-16.98 63.101 0 43.559 22.181 81.993 55.835 104.48-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0 60.806 43.291 111.55 100.69 123.1-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-0.803-23.634-2.333 15.985 49.907 62.336 86.199 117.25 87.194-42.947 33.654-97.099 53.655-155.92 53.655-10.134 0-20.116-0.612-29.944-1.721 55.567 35.681 121.54 56.485 192.44 56.485 230.95 0 357.19-191.29 357.19-357.19l-0.421-16.253c24.666-17.593 46.005-39.697 62.794-64.861z"/>
+                                 </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-footer__bottom">
+            <div class="copyright">&#169; 2010–2015, The Template Group inc.</div>
+            <a href="#" class="share-link"><h4 class="share-link__title">Share</h4> <span class="share-link__quantity">1 437</span></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
