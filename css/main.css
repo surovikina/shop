@@ -1807,6 +1807,16 @@ hr {
         cursor: pointer;
     }
 
+    .filter-list__item.chosen {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-list__item.chosen span {
+        color: var(--brand-color);
+    }
+
     .filter-list__item::after {
         content: '';
         position: absolute;

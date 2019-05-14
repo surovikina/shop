@@ -1,3 +1,21 @@
+(function () {
+    let prevpage = document.referrer;
+    let currentpage = document.location.href;
+
+    console.log(prevpage);
+    console.log(currentpage);
+
+    if (prevpage.indexOf('index') !== -1 && currentpage.indexOf('item') !== -1 ) {
+        let navLink = document.querySelector('.sub-header__link');
+        navLink.innerHTML = 'Back to starting page';
+        navLink.href = './index.html'
+    } else if (currentpage.indexOf('item') !== -1) {
+
+    }
+
+})();
+
+
 // Mobile menu
 
 (function () {
@@ -57,9 +75,9 @@
 
         let filterBlock = document.querySelector('.page-catalog .page-header__extra-inner');
 
-        if (screen.width < '1024') {
-
             function filterClickHandler(event) {
+                if (screen.width < '1024') {
+
                 let target = event.target;
 
                 if (filterBlock.classList.contains("show-filter-list") && target.classList.contains('filter-button')) {
@@ -70,9 +88,9 @@
                     document.body.classList.add('no-scroll');
                 }
             }
-
-            filterBlock.addEventListener('click', filterClickHandler);
         }
+
+        filterBlock.addEventListener('click', filterClickHandler);
 
 // Filter selection
 
@@ -89,13 +107,18 @@
             }
 
             if (target.classList.contains('disabled')) {
-                curentTarget.classList.remove('chosen')
+                curentTarget.classList.remove('chosen');
+                let spanwithCkekedItem = curentTarget.querySelector('span');
+                if (spanwithCkekedItem) {
+                    spanwithCkekedItem.remove();
+                }
+
             } else if (target.classList.contains('sub-filters__item')) {
                 target.classList.add('selected');
                 curentTarget.classList.add('chosen');
                 mobileList.innerHTML = '';
 
-                if (screen.width < '1024') {
+                // if (screen.width < '1024') {
                     filters.forEach(function (item) {
 
                         if (item.classList.contains('chosen')) {
@@ -109,6 +132,7 @@
                             mobileList.appendChild(mobLink);
 
                         } else {
+
                             let menuItemNew = item.querySelector('a').innerHTML;
                             let mobLink = document.createElement('li');
                             mobLink.classList = 'mob-filter-list__item';
@@ -117,8 +141,30 @@
                             mobileList.appendChild(mobLink);
                         }
                     });
-                } else {
-                    console.log('desktop width')
+                //
+                // }
+
+                if (screen.width > '1024')
+                // else
+                    {
+                    let contentInItemMenu = target.innerHTML;
+                    let thisActiv = curentTarget;
+                    let span = thisActiv.querySelector('span');
+
+                    if (span || target.classList.contains('disabled')){
+                        span.remove();
+                    }
+
+
+                    if (target.classList.contains('disabled')) {
+                        console.log('need delete span')
+                    }
+
+                    let linkMenuItem = thisActiv.getElementsByTagName('a')[0];
+                    let newItem = document.createElement('span');
+                    newItem.innerText = contentInItemMenu;
+                    thisActiv.insertBefore(newItem, linkMenuItem.nextSibling);
+
                 }
             }
         }
@@ -338,6 +384,7 @@
             byButton.setAttribute('disabled', true);
             byButton.classList.add('disabled');
             emptyBagButton.classList.add('disabled');
+            emptyBagButton.setAttribute('disabled', true);
         }
 
         let removeItems = function (event) {
@@ -528,6 +575,15 @@
 //     var aSlider = new Slider( ".slider-section" );
 // });
 
+
+
+function sum(item1) {
+    return function (item2) {
+        return item1 + item2;
+    }
+}
+
+console.log(sum(1)(2));
 
 
 
